@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlas"
+version = "0.4.1"
+description = "Atlas — modular tool-use and agent evaluation framework"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.20",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1"]
+
+[project.scripts]
+atlas = "atlas.atlas_cli.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["cli", "runner"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["atlas*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
