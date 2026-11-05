@@ -1,0 +1,315 @@
+{
+  "count": 2,
+  "best_model": "gemma4:31b-cloud",
+  "best_overall": 0.9114583333333333,
+  "leaderboard": [
+    {
+      "model": "gemma4:31b-cloud",
+      "provider": "ollama",
+      "overall": 0.9114583333333333,
+      "passed": 26,
+      "failed": 6,
+      "errors": 0,
+      "count": 32,
+      "pass_rate": 0.8125,
+      "tool_selection": 0.90625,
+      "argument_accuracy": 0.8793103448275862,
+      "structure_validity": 0.9375,
+      "hallucination_rate": 0.0,
+      "avg_latency_ms": 988.3124999999495,
+      "error": null
+    },
+    {
+      "model": "qwen3.5:4b",
+      "provider": "ollama",
+      "overall": 0.8870071684587812,
+      "passed": 24,
+      "failed": 7,
+      "errors": 1,
+      "count": 32,
+      "pass_rate": 0.75,
+      "tool_selection": 0.8870967741935484,
+      "argument_accuracy": 0.8190476190476189,
+      "structure_validity": 0.9354838709677419,
+      "hallucination_rate": 0.0,
+      "avg_latency_ms": 17400.741935483882,
+      "error": null
+    }
+  ],
+  "runs": [
+    {
+      "model": "qwen3.5:4b",
+      "provider": "ollama",
+      "summary": {
+        "count": 32,
+        "scored": 31,
+        "errors": 1,
+        "passed": 24,
+        "failed": 7,
+        "overall": 0.8870071684587812,
+        "pass_rate": 0.7741935483870968,
+        "tool_selection": 0.8870967741935484,
+        "argument_accuracy": 0.8190476190476189,
+        "structure_validity": 0.9354838709677419,
+        "multi_tool_planning": 1.0,
+        "argument_precision": 0.8685897435897435,
+        "argument_recall": 0.8273809523809523,
+        "hallucination_rate": 0.0,
+        "abstention_accuracy": 1.0,
+        "consistency": null,
+        "avg_latency_ms": 17400.741935483882,
+        "total_prompt_tokens": 9946,
+        "total_completion_tokens": 4795,
+        "total_tokens": 14741,
+        "by_category": {
+          "single_tool": {
+            "count": 4,
+            "overall": 0.9583333333333334,
+            "pass_rate": 0.75
+          },
+          "complex_args": {
+            "count": 3,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "multi_tool": {
+            "count": 3,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "tool_selection": {
+            "count": 2,
+            "overall": 0.5,
+            "pass_rate": 0.0
+          },
+          "abstention": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "edge": {
+            "count": 1,
+            "overall": 0.0,
+            "pass_rate": 0.0
+          },
+          "required_args": {
+            "count": 2,
+            "overall": 0.5,
+            "pass_rate": 0.5
+          },
+          "optional_args": {
+            "count": 2,
+            "overall": 0.9444444444444444,
+            "pass_rate": 0.5
+          },
+          "type_safety": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "hallucination": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "parallel_calls": {
+            "count": 3,
+            "overall": 0.9805555555555556,
+            "pass_rate": 1.0
+          },
+          "dependency_chain": {
+            "count": 2,
+            "overall": 0.9166666666666667,
+            "pass_rate": 0.5
+          },
+          "conversation": {
+            "count": 1,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "instruction_conflict": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "count": 9,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "medium": {
+            "count": 12,
+            "overall": 0.8914351851851853,
+            "pass_rate": 0.6666666666666666
+          },
+          "hard": {
+            "count": 7,
+            "overall": 0.7142857142857143,
+            "pass_rate": 0.7142857142857143
+          },
+          "expert": {
+            "count": 3,
+            "overall": 0.9333333333333335,
+            "pass_rate": 0.6666666666666666
+          }
+        },
+        "reliability": {
+          "pass_at_1": 0.75,
+          "pass_pow_1": 0.75,
+          "pass_rate": 0.75,
+          "pass_rate_ci": [
+            0.5789310822975338,
+            0.8674775601737845
+          ],
+          "overall": 0.8592881944444444,
+          "overall_ci": [
+            0.7350694444444444,
+            0.9583333333333331
+          ]
+        },
+        "pass_at_1": 0.75,
+        "pass_pow_1": 0.75
+      },
+      "error": null
+    },
+    {
+      "model": "gemma4:31b-cloud",
+      "provider": "ollama",
+      "summary": {
+        "count": 32,
+        "scored": 32,
+        "errors": 0,
+        "passed": 26,
+        "failed": 6,
+        "overall": 0.9114583333333333,
+        "pass_rate": 0.8125,
+        "tool_selection": 0.90625,
+        "argument_accuracy": 0.8793103448275862,
+        "structure_validity": 0.9375,
+        "multi_tool_planning": 1.0,
+        "argument_precision": 0.9444444444444444,
+        "argument_recall": 0.8793103448275862,
+        "hallucination_rate": 0.0,
+        "abstention_accuracy": 1.0,
+        "consistency": null,
+        "avg_latency_ms": 988.3124999999495,
+        "total_prompt_tokens": 3548,
+        "total_completion_tokens": 1630,
+        "total_tokens": 5178,
+        "by_category": {
+          "single_tool": {
+            "count": 4,
+            "overall": 0.875,
+            "pass_rate": 0.5
+          },
+          "complex_args": {
+            "count": 3,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "multi_tool": {
+            "count": 3,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "tool_selection": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "abstention": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "edge": {
+            "count": 1,
+            "overall": 0.0,
+            "pass_rate": 0.0
+          },
+          "required_args": {
+            "count": 2,
+            "overall": 0.5,
+            "pass_rate": 0.5
+          },
+          "optional_args": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "type_safety": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "hallucination": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "parallel_calls": {
+            "count": 3,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "dependency_chain": {
+            "count": 3,
+            "overall": 0.888888888888889,
+            "pass_rate": 0.3333333333333333
+          },
+          "conversation": {
+            "count": 1,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          },
+          "instruction_conflict": {
+            "count": 2,
+            "overall": 1.0,
+            "pass_rate": 1.0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "count": 9,
+            "overall": 0.9814814814814815,
+            "pass_rate": 0.8888888888888888
+          },
+          "medium": {
+            "count": 12,
+            "overall": 0.9722222222222222,
+            "pass_rate": 0.9166666666666666
+          },
+          "hard": {
+            "count": 7,
+            "overall": 0.7142857142857143,
+            "pass_rate": 0.7142857142857143
+          },
+          "expert": {
+            "count": 4,
+            "overall": 0.9166666666666667,
+            "pass_rate": 0.5
+          }
+        },
+        "reliability": {
+          "pass_at_1": 0.8125,
+          "pass_pow_1": 0.8125,
+          "pass_rate": 0.8125,
+          "pass_rate_ci": [
+            0.6469050424507756,
+            0.9111057606383722
+          ],
+          "overall": 0.9114583333333333,
+          "overall_ci": [
+            0.8177083333333331,
+            0.984375
+          ]
+        },
+        "pass_at_1": 0.8125,
+        "pass_pow_1": 0.8125
+      },
+      "error": null
+    }
+  ]
+}
