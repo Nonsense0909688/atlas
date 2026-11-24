@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 
 def main(argv: list[str] | None = None) -> int:
-    """CLI entry point (``atlas`` script + ``python cli.py``). Returns the exit code."""
+    """CLI entry point (``atlas`` script + ``python -m atlas``). Returns the exit code."""
     parser = build_parser()
     # Heaven-style help: `atlas`, `atlas --help`, `atlas help <cmd>`,
     # `atlas <cmd> --help` all render grouped help instead of argparse's

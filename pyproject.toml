@@ -21,7 +21,6 @@ atlas = "atlas.atlas_cli.app:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-py-modules = ["cli", "runner"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

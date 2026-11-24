@@ -1,14 +1,15 @@
 # Architecture
 
 Standard Python `src/` layout. All installable code lives in
-`src/atlas/`; top-level `cli`/`runner` modules are compatibility shims.
+`src/atlas/`.
 
 ```text
 atlas/
 ├── src/
 │   └── atlas/
 │       ├── __init__.py
-│       ├── cli.py / runner.py       # compatibility entry points
+│       ├── __main__.py              # `python -m atlas` entry point
+│       ├── cli.py / runner.py       # backward-compatible package APIs
 │       ├── models.py                # TestCase, ScoreBreakdown, EvalResult, …
 │       ├── exceptions.py            # ConfigError, ProviderError
 │       ├── logging_config.py
